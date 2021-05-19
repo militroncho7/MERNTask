@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react';
+import Tarea from './Tarea';
 
 const ListadoTareas = () => {
 
-    const tareas = [
+    const tareasProyecto = [
         { nombre: 'Elegir Plataforma', estado: true },
         { nombre: 'Elegir Colores', estado: false },
         { nombre: 'Elegir Plataformas de pago', estado: false },
@@ -12,7 +13,16 @@ const ListadoTareas = () => {
         <Fragment>
             <h2>Proyecto: Tienda Virtual</h2>
 
-            <ul className="listado-tareas"></ul>
+            <ul className="listado-tareas">
+                {tareasProyecto.length === 0
+                ? (<li className="tarea"><p>No hay tareas</p></li>)
+                : tareasProyecto.map(tarea => (
+                    <Tarea
+                        tarea={tarea}
+                    />
+                ))
+                }
+            </ul>
         </Fragment>
     );
 }
