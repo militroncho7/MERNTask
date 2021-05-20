@@ -2,9 +2,11 @@ import React, { useReducer } from 'react';
 
 import proyectoContext from './proyectoContext';
 import proyectoReducer from './proyectoReducer';
+import { FORMULARIO_PROYECTO } from '../../types';
 
 //state inicial de la administración de proyectos (edicion, eliminación, etc...)
 const ProyectoState = props => {
+
     const initialState = {
         formulario: false
     }
@@ -14,10 +16,18 @@ const ProyectoState = props => {
 
     //Serie de funciones para el CRUD de proyectos
 
+    //función que muestra el formulario
+    const mostrarFormulario = () => {
+        dispatch({
+            type: FORMULARIO_PROYECTO
+        });
+    };
+
     return(
         <proyectoContext.Provider
             value={{
-                formulario: state.formulario
+                formulario: state.formulario,
+                mostrarFormulario
             }}
         >
             {props.children}
