@@ -3,7 +3,7 @@ import proyectoContext from '../../context/proyectos/proyectoContext';
 
 const Proyecto = ({proyecto}) => {
 
-      //Obtener State de proyectos
+    //Obtener State de proyectos
     const proyectosContext = useContext(proyectoContext);
     const { proyectoActual } = proyectosContext;
 
