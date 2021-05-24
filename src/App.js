@@ -13,6 +13,7 @@ function App() {
     <ProyectoState>
       <TareaState>
         <Router>
+          <div>Hola mundo</div>
           <switch>
             <Route exact path="/" component={Login} />
             <Route exact path="/nueva-cuenta" component={NuevaCuenta} />
