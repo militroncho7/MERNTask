@@ -8,7 +8,7 @@ const Proyecto = ({proyecto}) => {
     const proyectosContext = useContext(proyectoContext);
     const { proyectoActual } = proyectosContext;
 
-    //Obtener la fnción del context de tarea
+    //Obtener la función del context de tarea
     const tareasContext = useContext(tareaContext);
     const { obtenerTareas } = tareasContext;
 
