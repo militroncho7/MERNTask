@@ -12,6 +12,8 @@ const ListadoProyectos = () => {
     //Obtener proyectos cuando carga el componente
     useEffect(() => {
         obtenerProyectos();
+        //eliminar error de la consola:
+        //eslint-disable-next-line
     }, []);
 
     //Revisar si proyectos tiene contenido
