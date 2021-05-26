@@ -41,7 +41,7 @@ const TareaState = props => {
     //Crear dispatch y state
     const [ state, dispatch ] = useReducer(TareaReducer, initialState);
 
-    //Crear las funciones
+    //Crear las funciones:
 
     //Obtener las tareas del proyecto
     const obtenerTareas = proyectoId => {
