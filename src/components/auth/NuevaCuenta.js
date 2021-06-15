@@ -35,7 +35,7 @@ const NuevaCuenta = () => {
             email.trim() === '' ||
             password.trim() === '' ||
             confirmar.trim() === '') {
-                mostrarAlerta('Todos los campos son obligatorios', 'aletar-error');
+                mostrarAlerta('Todos los campos son obligatorios', 'alerta-error');
                 return;
             };
 

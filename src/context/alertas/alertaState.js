@@ -4,7 +4,7 @@ import alertaContext from './alertaContext';
 
 import { MOSTRAR_ALERTA, OCULTAR_ALERTA } from '../../types';
 
-const alertaState = props => {
+const AlertaState = props => {
     
     const intialState = {
         alerta: null
@@ -41,4 +41,4 @@ const alertaState = props => {
     )
 };
 
-export default alertaState;
+export default AlertaState;
